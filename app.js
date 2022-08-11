@@ -187,13 +187,14 @@ let joe = new Student('Joe', 'Schmoe', 100);
 console.log(joe);
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
-// let AStudent = (name, age, hometown) => {
+
+// let Student = (name, age, hometown) => {
 //   this.name = name;
 //   this.age = age;
 //   this.hometown = hometown;
 // };
 
-// let joes = new AStudent('Joe', 'Schmoe', 100);
+// let joes = new Student('Joe', 'Schmoe', 100);
 
 // console.log(joes);
 
@@ -217,7 +218,7 @@ console.log(joe.greeting());
 //   return 'This student is enrolled in Code 301.';
 // };
 
-Student.courseName = courseName =>{
+Student.courseName = courseName => {
   return 'This student is enrolled in Code 301.';
 };
 
@@ -234,17 +235,17 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scope();
+joe.scope();
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scopeArrow();
+joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+//"this" is the joe Student instance
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//"this" is the browser Window object
 // 3. Explain why "this" is different when an arrow function is used.
-//
+//Since arrow functions aren't bound to the "this" keyword, any reference to "this" inside of an arrow function will evaluate to "this" in the arrow functions parent context. Because the parent context of Student.prototype.scopeArrow is the global context, "this" evaluates to the Window object.
