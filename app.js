@@ -18,7 +18,7 @@ const theNewWay = (course) => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log('The new way:', theNewWay('Code 301'));
+// console.log('The new way:', theNewWay('Code 301'));
 
 
 // STEP 3
@@ -28,17 +28,17 @@ const withoutParens = course => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log('Without parens:', withoutParens('Code 301'));
+// console.log('Without parens:', withoutParens('Code 301'));
 
 
 // STEP 4
 // If the code block contains a single line of code, we can write everything on one line
 // We no longer need the curly braces and the return is implicit
 // Without an arrow function, we need to explicitly type "return"
-const oneLiner = course => `I cam currently enrolled in ${course}`;
+// const oneLiner = course => `I cam currently enrolled in ${course}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log('As a one-liner:', oneLiner('Code 301'));
+// console.log('As a one-liner:', oneLiner('Code 301'));
 
 
 // STEP 5
@@ -49,7 +49,7 @@ const add = function(num1, num2) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log('Let\'s do some math:', add(4, 5));
+// console.log('Let\'s do some math:', add(4, 5));
 
 
 // STEP 6
@@ -58,7 +58,7 @@ console.log('Let\'s do some math:', add(4, 5));
 const addOneLiner = (num1, num2) => `${num1} + ${num2} = ${num1 + num2}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log('Add as a one-liner:', addOneLiner(4, 5));
+// console.log('Add as a one-liner:', addOneLiner(4, 5));
 
 
 // STEP 7
@@ -70,7 +70,7 @@ const multiLiner = word => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log('Multi-line arrow function:', multiLiner('hello'));
+// console.log('Multi-line arrow function:', multiLiner('hello'));
 
 
 // STEP 8
@@ -85,20 +85,20 @@ const oldObject = function(array) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log('Hello from the old object function', oldObject(['hi', 'hello', 'are you there?']));
+// console.log('Hello from the old object function', oldObject(['hi', 'hello', 'are you there?']));
 
 
 // STEP 9
 // With an arrow function, we need to wrap our object in parentheses
 // Otherwise, it will be interpreted as a code block
-const newObject = array => ({
-  firstValue: array[0],
-  secondValue: array[1],
-  thirdValue: array[2]
-});
+// const newObject = array => ({
+//   firstValue: array[0],
+//   secondValue: array[1],
+//   thirdValue: array[2]
+// });
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
+// console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
 
 
 // STEP 10
@@ -113,13 +113,13 @@ let sum = function(a, b, c, d) {
 };
 
 
-let sums  = (a, b, c, d) => {
-  return a + b + c + d;
-};
+// let sums  = (a, b, c, d) => {
+//   return a + b + c + d;
+// };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log(sum(1, 2, 3, 4));
-console.log(sums(1, 2, 3, 4));
+// console.log(sum(1, 2, 3, 4));
+// console.log(sums(1, 2, 3, 4));
 
 
 let objectLit = function() {
@@ -130,17 +130,17 @@ let objectLit = function() {
   };
 };
 
-let objectLits = array => ({
-    key1: 'value1',
-    key2: 'value2',
-    key3: 'value3',
-});
+// let objectLits = array => ({
+//     key1: 'value1',
+//     key2: 'value2',
+//     key3: 'value3',
+// });
 
 
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log(objectLit());
-console.log(objectLits());
+// console.log(objectLit());
+// console.log(objectLits());
 
 
 let sumAndProduct = function(a, b) {
@@ -150,28 +150,28 @@ let sumAndProduct = function(a, b) {
 };
 
 
-let sumAndProducts = (a, b) => {
-  let sum = a + b;
-  let product = a * b;
-  return [sum, product];
-}
+// let sumAndProducts = (a, b) => {
+//   let sum = a + b;
+//   let product = a * b;
+//   return [sum, product];
+// }
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log(sumAndProduct(3, 9));
-console.log(sumAndProducts(3, 9));
+// console.log(sumAndProduct(3, 9));
+// console.log(sumAndProducts(3, 9));
 
 
 let message = function(name) {
   return `Hello, ${name}!`;
 };
 
-let aMessage = (name) =>{
-  return `Hello, ${name}!`;
-};
+// let aMessage = (name) =>{
+//   return `Hello, ${name}!`;
+// };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log(message('Allie'));
-console.log(aMessage('Allie'));
+// console.log(message('Allie'));
+// console.log(aMessage('Allie'));
 
 
 let Student = function(name, age, hometown) {
@@ -184,7 +184,7 @@ let joe = new Student('Joe', 'Schmoe', 100);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-console.log(joe);
+// console.log(joe);
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
@@ -208,7 +208,7 @@ Student.prototype.greeting = function() {
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
-console.log(joe.greeting());
+// console.log(joe.greeting());
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
@@ -223,7 +223,7 @@ Student.courseName = courseName => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log(Student.courseName());
+// console.log(Student.courseName());
 
 
 
@@ -235,12 +235,12 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-joe.scope();
+// joe.scope();
 
-Student.prototype.scopeArrow = () => console.log(this);
+// Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-joe.scopeArrow();
+// joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
