@@ -112,8 +112,14 @@ let sum = function(a, b, c, d) {
   return a + b + c + d;
 };
 
+
+let sums  = (a, b, c, d) => {
+  return a + b + c + d;
+};
+
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sum(1, 2, 3, 4));
+console.log(sum(1, 2, 3, 4));
+console.log(sums(1, 2, 3, 4));
 
 
 let objectLit = function() {
@@ -124,8 +130,17 @@ let objectLit = function() {
   };
 };
 
+let objectLits = array => ({
+    key1: 'value1',
+    key2: 'value2',
+    key3: 'value3',
+});
+
+
+
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(objectLit());
+console.log(objectLit());
+console.log(objectLits());
 
 
 let sumAndProduct = function(a, b) {
@@ -134,8 +149,16 @@ let sumAndProduct = function(a, b) {
   return [sum, product];
 };
 
+
+let sumAndProducts = (a, b) => {
+  let sum = a + b;
+  let product = a * b;
+  return [sum, product];
+}
+
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
+console.log(sumAndProduct(3, 9));
+console.log(sumAndProducts(3, 9));
 
 
 let message = function(name) {
